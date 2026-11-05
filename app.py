@@ -5,11 +5,7 @@ PORT = 8080
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
-<<<<<<< HEAD
-        page = f"<h1>Hi, Sam!</h1><p>Today is {date.today():%B %d, %Y}</p>"
-=======
         page = f"<h1>Hey, Sam!</h1><p>Today is {date.today():%B %d, %Y}</p>"
->>>>>>> greet-hey
         self.send_response(200)
         self.send_header("Content-Type", "text/html")
         self.end_headers()
